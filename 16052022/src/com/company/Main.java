@@ -5,7 +5,7 @@ public class Main {
     public static void main(String[] args) {
 	// write your code here
 
-        System.out.println("Zadanie 1 ----- ");
+        System.out.println(" ----- Zadanie 1 ----- ");
         Statek statek = new Statek();
         statek.setRodzaj("Statek pasażerski");
         statek.Plyn();
@@ -14,7 +14,7 @@ public class Main {
         plane.setRodzaj("Bombowiec");
         plane.Lec();
 
-        System.out.println("Zadanie 2 ----- ");
+        System.out.println(" ----- Zadanie 2 ----- ");
         Wieloryb rybka = new Wieloryb();
         rybka.setGatunek("Wieloryb oceaniczny");
         rybka.jedz();
@@ -22,5 +22,11 @@ public class Main {
         rybka.wydalaj();
         rybka.Wynurz();
         rybka.Zanurz();
+
+        System.out.println(" ----- Zadanie 3 ----- ");
+        Garfield kot = new Garfield();
+        kot.Nazwij();
+        kot.Jedz();
+        kot.Przytyj();
     }
 }
