@@ -7,8 +7,23 @@ public class Main {
     public static void main(String[] args) {
 	// write your code here
 
-        System.out.println("----- Zadanie 1 -----");
         Scanner in = new Scanner(System.in);
+
+        System.out.println("----- Zadanie 3 -----");
+        CheckAdres checkadres = new CheckAdres();
+
+        System.out.println("Podaj ulice");
+        String ulica = in.nextLine();
+        System.out.println("Podaj nr domu");
+        int nr_domu = in.nextInt();
+
+        Adres adres = new Adres(checkadres.ulicaException(ulica),
+                checkadres.nrDomuException(nr_domu));
+
+        adres.adres();
+
+        System.out.println("----- Zadanie 1 -----");
+
         System.out.println("Podaj liczbe");
         int liczba = in.nextInt();
 
@@ -33,19 +48,5 @@ public class Main {
             }
             System.out.println(liczba2+"! = "+wynik);
         }
-
-        System.out.println("----- Zadanie 3 -----");
-        CheckAdres checkadres = new CheckAdres();
-
-        System.out.println("Podaj ulice");
-        String ulica = in.nextLine();
-        System.out.println("Podaj nr domu");
-        int nr_domu = in.nextInt();
-
-        Adres adres = new Adres(checkadres.ulicaException(ulica),
-                                checkadres.nrDomuException(nr_domu));
-
-        adres.adres();
-
     }
 }
