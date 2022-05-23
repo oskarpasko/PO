@@ -11,7 +11,7 @@ public class Main {
         statek.Plyn();
 
         Samolot plane = new Samolot();
-        plane.setRodzaj("Bombowiec");
+        plane.setRodzaj("Dwupłatowiec");
         plane.Lec();
 
         System.out.println(" ----- Zadanie 2 ----- ");
